@@ -38,6 +38,8 @@ import GlassFrame from "@/components/GlassFrame.vue";
 import DropDownFilter from "@/components/DropDownFilter.vue";
 
 export default {
+  name: "HomeIndex",
+
   components: {
     GlassFrame,
     DropDownFilter,
@@ -87,8 +89,8 @@ export default {
       const { collections } = data;
       this.collections = collections;
 
-      this.type = this.$route.params?.type || null;
-      this.gender = this.$route.params?.gender || null;
+      this.type = this.$route.params?.type || "spectacles";
+      this.gender = this.$route.params?.gender || "women";
     } catch (err) {
       console.log({ err });
     }
