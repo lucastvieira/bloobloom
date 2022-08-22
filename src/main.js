@@ -6,7 +6,7 @@ import { createVueWait } from "vue-wait";
 import VueAxios from "vue-axios";
 import axios from "@/services/api";
 import mixin from "@/mixins/global";
-import { store } from "./store";
+import { store } from "@/store";
 
 /* import specific icons */
 import {
@@ -19,13 +19,13 @@ import {
 /* add icons to the library */
 library.add(faChevronLeft, faChevronRight, faSpinner, faTimes);
 
-import App from "./App.vue";
-import router from "./router";
+import App from "@/App.vue";
+import router from "@/router";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue-3/dist/bootstrap-vue-3.css";
-import "./assets/fonts.scss";
-import "./assets/main.scss";
+import "@/assets/fonts.scss";
+import "@/assets/main.scss";
 
 const app = createApp(App);
 const VueWait = createVueWait();
